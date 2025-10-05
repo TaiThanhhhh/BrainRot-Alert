@@ -38,15 +38,15 @@ BrainRot Alert is a browser extension designed to help users identify and minimi
 ## 📸 Screenshots
 
 ### Extension Popup Interface
-![Extension Popup](./screenshots/popup-interface.png)
+![Extension Popup](./brainrot-alert-extension-advanced/screenshots/popup-interface.png)
 *Main extension popup showing current status, settings, and quick actions*
 
 ### Browser Notification Alert
-![Browser Notification](./screenshots/browser-notification.png)
+![Browser Notification](./brainrot-alert-extension-advanced/screenshots/browser-notification.png)
 *Real-time browser notification when brainrot content is detected*
 
 ### Telegram Alert Notification
-![Telegram Alert](./screenshots/telegram-notification.png)
+![Telegram Alert](./brainrot-alert-extension-advanced/screenshots/telegram-notification.png)
 *Instant Telegram message alert sent to your mobile device when excessive brainrot is detected*
 
 ## 🚀 Getting Started
