@@ -101,8 +101,8 @@ BrainRot-Alert/
 - [x] Basic content monitoring
 - [x] Alert notifications
 - [x] Custom popup interface
-- [ ] Statistics dashboard
-- [ ] Multi-browser support (Firefox, Edge)
+- [x] Statistics dashboard
+- [x] Multi-browser support (Firefox, Edge)
 - [ ] AI-powered content classification
 - [ ] Sync settings across devices
 - [ ] Integration with productivity tools
