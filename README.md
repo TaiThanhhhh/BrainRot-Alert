@@ -25,6 +25,7 @@ BrainRot Alert is a browser extension designed to help users identify and minimi
 - 🚫 **Website Blocking**: Automatically block brainrot sites after a set time limit
 - 📈 **Goal Setting**: Set daily limits and track your progress
 - 🌙 **Focus Mode**: Enable strict blocking during work/study hours
+- 📱 **Telegram Integration**: Receive instant alerts on your mobile device
 - 🔐 **Privacy First**: All data stored locally on your device
 
 ### 🛠️ Built With
@@ -32,6 +33,21 @@ BrainRot Alert is a browser extension designed to help users identify and minimi
 - JavaScript (ES6+)
 - Chrome Extension API / WebExtensions API
 - HTML5 & CSS3
+- Telegram Bot API
+
+## 📸 Screenshots
+
+### Extension Popup Interface
+![Extension Popup](./screenshots/popup-interface.png)
+*Main extension popup showing current status, settings, and quick actions*
+
+### Browser Notification Alert
+![Browser Notification](./screenshots/browser-notification.png)
+*Real-time browser notification when brainrot content is detected*
+
+### Telegram Alert Notification
+![Telegram Alert](./screenshots/telegram-notification.png)
+*Instant Telegram message alert sent to your mobile device when excessive brainrot is detected*
 
 ## 🚀 Getting Started
 
@@ -40,6 +56,7 @@ BrainRot Alert is a browser extension designed to help users identify and minimi
 - Google Chrome browser (version 88 or higher)
 - OR Firefox browser (version 85 or higher)
 - OR Microsoft Edge browser (version 88 or higher)
+- (Optional) Telegram account for mobile notifications
 
 ### Installation
 
@@ -50,10 +67,13 @@ The extension will be available on the Chrome Web Store soon.
 #### Manual Installation (Development)
 
 1. Clone the repository
+
 git clone https://github.com/TaiThanhhhh/BrainRot-Alert.git
 
 2. Navigate to the project directory
+
 cd BrainRot-Alert
+
 
 3. Load the extension in Chrome
 - Open Chrome and navigate to `chrome://extensions/`
@@ -63,6 +83,17 @@ cd BrainRot-Alert
 
 4. The extension icon should now appear in your browser toolbar
 
+### Setting Up Telegram Notifications (Optional)
+
+1. Open Telegram and search for [@BotFather](https://t.me/botfather)
+2. Create a new bot using `/newbot` command
+3. Copy your bot token
+4. Click the extension icon and go to Settings
+5. Paste your bot token in the "Telegram Integration" section
+6. Get your Chat ID by messaging your bot and visiting `https://api.telegram.org/bot<YOUR_BOT_TOKEN>/getUpdates`
+7. Enter your Chat ID in the extension settings
+8. Save and test the connection
+
 ## 💡 Usage
 
 ### Basic Usage
@@ -70,7 +101,7 @@ cd BrainRot-Alert
 1. **First Time Setup**: Click the extension icon and configure your preferences
 2. **Set Your Limits**: Define daily time limits for different content categories
 3. **Browse Normally**: The extension runs in the background monitoring your activity
-4. **Receive Alerts**: Get notified when you've spent too much time on brainrot content
+4. **Receive Alerts**: Get notified via browser notifications and Telegram when you've spent too much time on brainrot content
 
 ### Configuration Options
 
@@ -78,6 +109,8 @@ cd BrainRot-Alert
 - **Block List**: Add specific websites or content types to monitor
 - **Quiet Hours**: Set times when alerts should be disabled
 - **Statistics**: View your browsing patterns in the dashboard
+- **Telegram Integration**: Enable mobile notifications through Telegram bot
+- **Notification Types**: Choose between browser notifications, Telegram alerts, or both
 
 ## 📁 Project Structure
 ```bash
@@ -96,16 +129,21 @@ BrainRot-Alert/
 └── README.md
 ```
 
+
 ## 🗺️ Roadmap
 
 - [x] Basic content monitoring
 - [x] Alert notifications
 - [x] Custom popup interface
+- [x] Browser notification system
+- [x] Telegram bot integration
 - [x] Statistics dashboard
 - [x] Multi-browser support (Firefox, Edge)
 - [ ] AI-powered content classification
 - [ ] Sync settings across devices
 - [ ] Integration with productivity tools
+- [ ] Discord webhook support
+- [ ] Export usage reports
 
 See the [open issues](https://github.com/TaiThanhhhh/BrainRot-Alert/issues) for a full list of proposed features and known issues.
 
@@ -127,6 +165,7 @@ If you have a suggestion that would make this better, please fork the repo and c
 - Write clear commit messages
 - Update documentation as needed
 - Test your changes thoroughly before submitting
+- Add screenshots for UI changes
 
 ## 📄 License
 
@@ -143,6 +182,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 - [Chrome Extension Documentation](https://developer.chrome.com/docs/extensions/)
 - [MDN Web Extensions](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions)
+- [Telegram Bot API](https://core.telegram.org/bots/api)
 - [Best README Template](https://github.com/othneildrew/Best-README-Template)
 - [Shields.io](https://shields.io) - For README badges
 - All contributors who have helped improve this project
@@ -160,14 +200,16 @@ If you encounter any issues or have questions:
 BrainRot Alert respects your privacy:
 
 - All data is stored **locally** on your device
-- No data is sent to external servers
+- No data is sent to external servers (except Telegram if enabled)
 - No tracking or analytics
 - No personal information is collected
+- Telegram bot token and chat ID are stored locally and encrypted
 
 ---
 
 <p align="center">Made with ❤️ by TaiThanh</p>
 <p align="center">Fighting brainrot, one alert at a time! 🧠✨</p>
+
 
 
 
